@@ -1,40 +1,89 @@
 import java.util.Scanner;
 
-public class CarRentsl{
-    public static void main(String[] args){
+public class CarRental {
+    static class Car {
+        private String brand;
+        private String model;
+        private int year;
+        private double dailyRate;
+
+        public Car(String brand, String model, int year, double dailyRate) {
+            this.brand = brand;
+            this.model = model;
+            this.year = year;
+            this.dailyRate = dailyRate;
+        }
+        public String getBrand() {return brand; }
+        public String getModel() {return model; }
+        public int getYear() {return year; }
+        public double getDailyRate() {return dailyRate; }
+
+        @Override
+        public String toString(){
+            return String.format("%s %s (%d p.) - %.2f грн/доба", brand, model, year, dailyRate );
+        }
+    }
+
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("---Система прокату автомобілів---");
-        System.out.print("Введіть марку автомобіля:");
-        String brand = scanner.nextLine();
+        System.out.print("Скільки автомобілів бажаєте додати? ");
+        int n = scanner.nextInt();
+        scanner.nextLine();
 
-        System.out.print("Введіть модель автомобіля:");
-        String model = scanner.nextLine();
+        Car[] cars = new Car[n];
 
-        System.out.print("Введіть рік випуску:");
-        int year = scanner.nextInt();
+        for (int i = 0; i < n; i++) {
+            System.out.println("\n--- Автомобіль №" + (i + 1) + "---");
+            System.out.print("Марка: ");
+            String brand = scanner.nextLine();
 
-        System.out.print("Введіть добову вартість оренди?(грн): ");
-        double dailyRate = scanner.nextDouble();
+            System.out.print("Модель:");
+            String model = scanner.nextLine();
 
-        System.out.print("Автомобіль доступний? (true/false): ");
-        boolean available = scanner.nextBoolean();
+            System.out.print("Рік випуску:");
+            int year = scanner.nextInt();
 
-        System.out.print("Введіть кількість днів оренди: ");
-        int rentalDays = scanner.nextInt();
+            System.out.print("Добова ставка (грн): ");
+            double dailyRate = scanner.nextDouble();
+            scanner.nextLine();
 
-        double totalCost = dailyRate * rentalDays;
-        if(rentalDays >7){
-            totalCost *= 0.9;
+            cars[i] = new Car(brand, model, year, dailyRate);
         }
 
-        System.out.println("\n---Деталі оренди---");
-        System.out.printf("Автомобіль: %s %s (%d p.)%n", brand, model, year);
-        System.out.printf("Добова ставка: %.2f грн%n", dailyRate);
-        System.out.printf("Днів оренди: %d%n", rentalDays);
-        System.out.printf("Доступність: %b%n", available);
-        System.out.printf("Загальна вартість (з урахуванням знижка, якщо є): %.2f грн%n", totalCost);
+        System.out.println("\n=== Список всіх фвтомобілів ===");
+        for (Car car : cars) {
+            System.out.println(car);
+        }
 
+        System.out.print("\nВведіть порогову ставку (грн) для підрахунку: ");
+        double threshold = scanner.nextDouble();
+
+        int count = 0;
+        for (Car car : cars) {
+            if (car.getDailyRate() > threshold) {
+                count++;
+            }
+        }
+        System.out.printf("Автомобілів дорожчих за %.2f грн: %d%n", threshold, count);
+
+        System.out.println("\n=== Масив ДО сортування ===");
+        for(Car car : cars){
+            System.out.println(car);
+        }
+        for (int i = 0; i < cars.length - 1; i++) {
+            for(int j = 0; j < cars.length - 1 - i; j++){
+                if(cars[j].getDailyRate() > cars[j + 1].getDailyRate()){
+                    Car temp = cars[j];
+                    cars[j] = cars[j + 1];
+                    cars[j + 1] = temp;
+                }
+            }
+        }
+        System.out.println("\n=== Масив ПІСЛЯ сортування (за добовою ставкою) ===");
+        for (Car car : cars){
+            System.out.println(car);
+        }
         scanner.close();
     }
 }
