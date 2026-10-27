@@ -401,6 +401,106 @@ java -cp out CarRental
 
 ---
 
+
+# Лабораторна робота №6
+## Наслідування та поліморфізм у Java
+
+### Опис проєкту
+Програма моделює систему прокату транспорту.
+Користувач може переглянути доступні транспортні засоби,
+розрахувати вартість оренди та підтвердити або скасувати її.
+
+### Реалізовані можливості
+- Абстрактний клас `Vehicle` та абстрактний метод `getDescription()`.
+- Трирівнева ієрархія: `Vehicle → Car → ElectricCar`.
+- Наслідування та виклик конструкторів через `this()` і `super()`.
+- Перевантажені конструктори.
+- Класи та методи з модифікатором `final`.
+- `instanceof` із pattern matching.
+- Перевизначення `equals()` і `hashCode()`.
+- Композиція: `ElectricCar` містить `Battery`.
+- Sealed-ієрархія через `sealed` і `permits`.
+- `switch` із pattern matching.
+- Factory для вибору способу розрахунку оренди.
+- Observer для сповіщення про зміну статусу автомобіля.
+
+### Діаграма класів
+
+```mermaid
+classDiagram
+    class Vehicle {
+        <<abstract>>
+        -String brand
+        -String model
+        -int year
+        -String status
+        +getDescription()*
+        +isAvailable() final
+        +equals(Object)
+        +hashCode()
+    }
+
+    class Car {
+        -double dailyRate
+        +getDescription()
+        +setStatus(String)
+    }
+
+    class ElectricCar {
+        -Battery battery
+        +getBatteryCapacity()
+        +getDescription()
+        +equals(Object)
+        +hashCode()
+    }
+
+    class Motorcycle {
+        -int engineCapacity
+        -double dailyRate
+        +getDescription()
+    }
+
+    class Battery {
+        -int capacityKWh
+    }
+
+    Vehicle <|-- Car
+    Car <|-- ElectricCar
+    Vehicle <|-- Motorcycle
+    ElectricCar *-- Battery : композиція
+
+    class RentalPrice {
+        <<interface>>
+        +calculatePrice(double, int) double
+    }
+
+    class StandardRental
+    class LongTermRental
+    class RentalFactory
+
+    RentalPrice <|.. StandardRental
+    RentalPrice <|.. LongTermRental
+    RentalFactory ..> RentalPrice : створює
+
+    class CarObserver {
+        <<interface>>
+        +update(Car, String, String)
+    }
+
+    class CarLogger
+    class CarNotification
+
+    CarObserver <|.. CarLogger
+    CarObserver <|.. CarNotification
+    Car o-- CarObserver : сповіщає
+```
+
+### Запуск програми
+Відкрити `CarRental.java` та запустити метод `main()`.
+
+Для демонстрації вимог лабораторної роботи вибрати пункт меню `2`.
+Для оформлення оренди вибрати пункт меню `1`.
+
 ## Автор
 
 Студент: Ірина Костащук  
