@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef3df01d-5e8b-4cc5-b336-7eee25561c96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/CarRentsl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/CarRental.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.000000000027123" />
+      <entry key="S2" value="1.0030694926019175" />
+      <entry key="S5" value="1.189398868583889" />
+      <entry key="S10" value="2.024628023965228" />
+      <entry key="S30" value="6.836007069572421" />
+      <entry key="S60" value="13.983758526610483" />
+      <entry key="M2" value="24.36922378800076" />
+      <entry key="M5" value="40.15776293338282" />
+      <entry key="M10" value="54.47635392732422" />
+      <entry key="M15" value="65.54562087370317" />
+      <entry key="M30" value="87.66648510342048" />
+      <entry key="H1" value="107.65169085360128" />
+      <entry key="H2" value="121.51676150213866" />
+      <entry key="H4" value="129.78238735178894" />
+      <entry key="D1" value="175.5795015896277" />
+      <entry key="W1" value="267.64390423092357" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="3.662370159287755E-17" />
+      <entry key="MS500" value="5.161220901178615E-4" />
+      <entry key="S2" value="0.15072597846134506" />
+      <entry key="S5" value="0.4691106192977185" />
+      <entry key="S10" value="0.685098207554722" />
+      <entry key="S30" value="0.9770560729165599" />
+      <entry key="S60" value="1.4847855145824023" />
+      <entry key="M2" value="2.4211031387639586" />
+      <entry key="M5" value="4.073610258447094" />
+      <entry key="M10" value="6.170104265130772" />
+      <entry key="M15" value="7.9394151883295585" />
+      <entry key="M30" value="11.274963334394727" />
+      <entry key="H1" value="14.032301329128085" />
+      <entry key="H2" value="15.833082622931132" />
+      <entry key="H4" value="16.88049025263103" />
+      <entry key="D1" value="32.0485002249237" />
+      <entry key="W1" value="65.39634820614145" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.7135560730670203E-14" />
+      <entry key="MS500" value="0.0018266017341366553" />
+      <entry key="S2" value="0.29442524118628266" />
+      <entry key="S5" value="1.0210479480488397" />
+      <entry key="S10" value="2.148441001993957" />
+      <entry key="S30" value="7.3720368681124775" />
+      <entry key="S60" value="15.08697030782554" />
+      <entry key="M2" value="26.4407109120089" />
+      <entry key="M5" value="43.962811811542224" />
+      <entry key="M10" value="60.44269112791079" />
+      <entry key="M15" value="73.31121853455431" />
+      <entry key="M30" value="98.81608347775637" />
+      <entry key="H1" value="121.60394618902373" />
+      <entry key="H2" value="137.3038174065863" />
+      <entry key="H4" value="146.63807811293594" />
+      <entry key="D1" value="207.6221072896428" />
+      <entry key="W1" value="333.03890078361064" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3IzS5HeRoSj5Npng5ScCzCzOqTU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.CarRental.executor": "Run",
+    "Application.CarRentsl.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "D:/lab1/src/Main.java",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="CarRental" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="CarRental" />
+      <module name="lab1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CarRental" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef3df01d-5e8b-4cc5-b336-7eee25561c96" name="Changes" comment="" />
+      <created>1788765727031</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788765727031</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
