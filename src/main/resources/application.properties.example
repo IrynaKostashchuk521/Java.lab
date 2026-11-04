@@ -1,0 +1,4 @@
+
+db.url=jdbc:mysql://localhost:3306/car_rental
+db.username=root
+db.password=YOUR_PASSWORD
